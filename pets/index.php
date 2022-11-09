@@ -24,7 +24,15 @@
 		</nav>
 	</header>
 	<section class="sliderPrincipal">
-		<img src="images/slider1.jpg" title="Slider">
+
+		<div class="cuadro">
+			<h2>Proyecto adopcion de mascotas</h2>
+			<div class="centro">
+				<button class="button1 button2">ADOPTANOS</button>
+			</div>
+		</div>
+
+	    <img src="images/slider1.jpg" title="Slider">
 	</section>
 	<section class="titulo"><h3 class="colorAzul mayusculas">Adopción</h3></section>
 	<section class="adopcion1">
@@ -82,11 +90,8 @@
 	    </div>	
 	</section>
 	<section class="sponsor">
-		<center>
-			<img src="images/logotipoPet.png" style="margin: 60px;" width="150" height="70">
-		<img src="images/logo_blanco_utpl.png" style="margin: 60px;" width="300" height="130">
-		</center>
-		
+			<img src="images/logotipoPet.png">
+			<img src="images/logo_blanco_utpl.png">
 	</section>
 	<footer class="piePagina">
 		<section class="derechos">

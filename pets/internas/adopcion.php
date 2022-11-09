@@ -24,10 +24,41 @@
 		</nav>
 	</header>
 	<main>
-		<h2>Servicos de municipio de Loja</h2>
-		<p>Snares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat trade</p>
+		<h2>Formulario de Adopción</h2>
+		<form method="post" action="procesar.php">
+			<div class="grupoinput">
+				<label for="nombres">Nombres<span class="colorRojo">*</span></label>
+				<input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombres" required>
+			</div>
+			<div class="grupoinput">
+				<label for="apellidos">Apellidos</label>
+				<input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos">
+			</div>
+			<div class="grupoinput">
+				<label for="correo">Correo</label>
+				<input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
+			</div>
+			<div class="grupoinput">
+				<label for="cedula">Cédula</label>
+				<input type="number" id="cedula" name="cedula" placeholder="Ingrese su cedula">
+			</div>
+			<div class="grupoinput">
+				<label for="telefono">Telefono</label>
+				<input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+			</div>
+			<div class="grupoinput">
+				<label for="fechaNacimiento">Fecha de nacimiento</label>
+				<input type="date" id="echaNacimiento" name="echaNacimiento" placeholder="Ingrese su fecha de nacimiento">
+			</div>
+			<div class="grupoinput">
+				<label for="direccion">Dirección</label>
+				<input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+			</div>
+			<button type="submit" class="button">Guardar datos 2</button>
+		</form>
 	</main>
 	<section class="sponsor">
+		<h3>Sponsor</h3>
 		<img src="../images/logotipoPet.png">
 		<img src="../images/logo_blanco_utpl.png">
 	</section>
