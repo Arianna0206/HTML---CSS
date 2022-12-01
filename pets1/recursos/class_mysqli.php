@@ -9,6 +9,7 @@ class class_mysqli{
 	var $Servidor;
 	var $Usuario;
 	var $Clave;
+	var $Puerto;
 
 	//variales de eror
 	var $Error="";
@@ -18,26 +19,29 @@ class class_mysqli{
 	var $Conexion_ID=0;
 	var $Consulta_ID=0;
 
-	public function __construct($host="", $user="", $pass="", $db="")
+	public function __construct($host="", $user="", $pass="", $db="", $port="")
 	{
 		$this->BaseDatos=$db;
 		$this->Usuario=$user;
 		$this->Clave=$pass;
 		$this->Servidor=$host;
+		$this->Puerto=$port;
 	}
 
-	function conectar($host, $user, $pass, $db){
+	function conectar($host, $user, $pass, $db, $port){
 		if ($db != "") $this->BaseDatos=$db; 
 		if ($user != "") $this->Usuario=$user; 
 		if ($pass != "") $this->Clave=$pass; 
 		if ($host != "") $this->Servidor=$host;
+		if ($port != "") $this->Puerto=$port;
 
 		//parametos de conexion a la db
-		$this->Conexion_ID=new mysqli($this->Servidor, $this->Usuario, $this->Clave, $this->BaseDatos);
+		$this->Conexion_ID = mysqli_connect($this->Servidor, $this->Usuario, $this->Clave, $this->BaseDatos, $this->Puerto);
 		if (!$this->Conexion_ID) {
 		 	$this->Error="La conexion a fallado :(";
 		 	return 0;
 		} 	
+
 		return $this->Conexion_ID;
 	}
 	function consulta($sql=""){

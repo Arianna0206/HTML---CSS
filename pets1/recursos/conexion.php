@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$conexion= new mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+$conexion= mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME, DPUERTO);
 if(!$conexion){
 	echo"hay un error de conexion en la db";
 }

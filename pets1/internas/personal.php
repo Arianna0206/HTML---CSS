@@ -29,7 +29,7 @@
 			include("../recursos/config.php");
 		 	include("../recursos/class_mysqli.php");
 		 	$miconexion= new class_mysqli();
-		 	$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+		 	$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME, DPUERTO);
 		 	$miconexion->consulta("select id, nombres, apellidos, correo 'E-mail' from personal");
 		 	$miconexion->verconsultaCRUD();
 		?>
